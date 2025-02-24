@@ -1,0 +1,117 @@
+.main-header-container{
+  min-width:100%;
+  z-index: 2;
+  position:relative;
+  top:0;
+  left:0;
+}
+
+/* Class name passed as props from Home01, Home02 components */
+.absolute{
+    position:absolute;
+}
+.small-screen, .none{
+  display: none;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+  
+
+.main-header-logo img {
+  height: 10vw; 
+  width: auto;
+}
+
+.main-header-logo:hover{
+  cursor: pointer;
+}
+
+.main-header-lists-menu {
+  display: flex;
+  align-self: start;
+  list-style: none;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+
+.main-header-list-item {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 1.2rem;
+  color:white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.main-header-list-item:hover {
+  color: gold;
+}
+
+.main-header-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; 
+  width: 100%;
+  height: 100%;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-header {
+    align-items: center;
+    padding: 2rem;
+  }
+  .main-header-logo img{
+    height:18vw;
+  }
+  .main-header-lists-menu {
+    gap: 1.5rem;
+  }
+
+  .main-header-list-item {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-header {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .main-header-lists-menu {
+    gap: 1rem;
+  }
+
+  .main-header-list-item {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .main-header-lists-menu{
+    align-self: center;
+    order:1;
+  }
+  .main-header-logo{
+    order:2;
+    padding:3rem 0;
+  }
+  .main-header-logo img {
+    height: 50vw;
+  }
+
+  .main-header-list-item {
+    font-size: 1rem;
+  }
+}

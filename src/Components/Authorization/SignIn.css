@@ -1,0 +1,142 @@
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../../assets/SignIn/signupBackground.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.signin-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.highlight {
+    color: #ffc107; 
+    font-style: italic;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.signin-label {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.signin-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.signin-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signin-button {
+    background: #ffc107;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.signin-button:hover {
+    background: #e0a800;
+}
+
+.signin-login-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.signin-login-link {
+color: #ffc107;
+font-weight: bold;
+cursor: pointer;
+}
+
+.signin-login-link:hover {
+text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.signin-title {
+    font-size: 3rem;
+}
+
+.signin-form {
+    width: 95%;
+    padding: 15px;
+}
+
+.signin-input {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.signin-button {
+    font-size: 1rem;
+    padding: 10px;
+}
+}
+
+@media (max-width: 480px) {
+.signin-title {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.signin-form {
+    padding: 10px;
+}
+
+.signin-input {
+    font-size: 0.85rem;
+    padding: 8px;
+}
+
+.signin-button {
+    font-size: 0.95rem;
+    padding: 8px;
+}
+}

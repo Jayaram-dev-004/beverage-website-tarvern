@@ -1,0 +1,139 @@
+.bestIng-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E0D0D;
+    color: white;
+    padding: 40px;
+}
+
+.bestIng-left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-outer-container {
+    padding: 2rem;
+}
+
+.left-inner-header {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left-inner-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-inner-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1f1b1b7a;;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.inner-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.inner-item-header .point{
+    height:3rem;
+}
+
+.inner-item-para {
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    letter-spacing: 0.2rem;
+    color: #cccccc;
+}
+
+.left-inner-btn {
+    margin-top: 20px;
+}
+
+.bestIng-right-container {
+    width: 50%;
+}
+
+.bestIng-img {
+    width: 100%;
+    display: block;
+    max-height:95vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px){
+    .bestIng-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-inner-header{
+        font-size: 3rem;
+    }
+    .left-outer-container{
+        text-align: center;
+    }
+    .inner-item-header{
+        font-size: 1.5rem;
+    }
+    .bestIng-left-container {
+        width: 100%;
+    }
+    .inner-item-para{
+        font-size: 1rem;
+    }
+    .inner-item-header .point{
+        height:3rem;
+    }
+
+    .bestIng-img {
+        display: none;
+     }
+
+}
+@media (max-width: 768px) {
+    .bestIng-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px){
+    .left-inner-header{
+        font-size: 3rem;
+    }
+    .inner-item-header{
+        font-size: 1.5rem;
+    }
+    .inner-item-para{
+        font-size: 1rem;
+    }
+    .inner-item-header .point{
+        height:3rem;
+    }
+
+}
+
+@media (max-width: 370px){
+    .left-inner-header{
+        font-size: 2.5rem;
+    }
+    .inner-item-header{
+        font-size: 1.5rem;
+    }
+
+
+}

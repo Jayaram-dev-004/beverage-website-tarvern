@@ -1,0 +1,27 @@
+.notfound-container {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .notfound-container h1 {
+    font-size: 80px;
+    color: red;
+  }
+  
+  .notfound-container p {
+    font-size: 18px;
+  }
+  
+  .notfound-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .notfound-container button:hover {
+    background: orange;
+  }

@@ -1,0 +1,179 @@
+@import url('../../style.module.css'); 
+
+.premium-spirits-container {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.premium-spirits-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.premium-spirits-logo {
+    width: 10rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.premium-spirits-title {
+    font-size: 5rem;
+}
+
+.premium-spirits-subtitle {
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.premium-spirits-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.premium-spirits-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.premium-spirits-row.center {
+    justify-content: center;
+}
+
+.premium-spirits-box {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 280px;
+    min-height: 230px;
+    overflow: hidden;
+    transition: scale 0.1s ease-in-out;
+}
+.premium-spirits-box:hover{
+    cursor: pointer;
+    scale : 1.2;
+}
+
+.premium-spirits-img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium-spirits-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.premium-spirits-img-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(116, 114, 114, 0.00) 0%, 
+                rgba(207, 202, 202, 0.31) 0.01%, 
+                rgba(29, 28, 28, 0.85) 75%, #111010 90%);
+}
+
+.premium-spirits-text {
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.premium-spirits-cartoon {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.premium-spirits-cartoon-img {
+    width: 150px;
+}
+
+/* Manufacturers */
+.premium-spirits-manufacturers {
+    background-color:#111010;
+    margin-top: 40px;
+}
+
+.premium-spirits-manufacturers-title {
+    font-size: 5rem;
+    color: #ffcc00;
+}
+
+.premium-spirits-manufacturers-logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.premium-spirits-manufacturer-img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .premium-spirits-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .premium-spirits-manufacturers-title {
+        font-size: 3rem;
+        color: #ffcc00;
+    }
+    
+
+    .premium-spirits-title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 428px){
+    .premium-spirits-logo{
+        width: 7rem;
+    }
+    .premium-spirits-manufacturers-title {
+        font-size: 3rem;
+        color: #ffcc00;
+    }
+    .premium-spirits-title {
+        font-size: 2rem;
+    }
+    .premium-spirits-cartoon {
+        display: none; 
+    }
+}
+@media screen and (max-width: 350px){
+    .premium-spirits-box
+    {
+        max-width: 180px;
+        min-height: 130px;
+    }
+}

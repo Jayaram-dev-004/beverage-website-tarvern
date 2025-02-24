@@ -1,0 +1,187 @@
+.locator-container {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.locator-container::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(116, 114, 114, 0.00) 0%, rgba(207, 202, 202, 0.31) 0.01%, rgba(29, 28, 28, 0.85) 51.9%, #111010 100%);    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+.locator-header-container {
+    width: 100%;
+    min-width: 100%;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+}
+
+.locator-header-container h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+}
+
+.locator-content-container {
+    z-index: 2;
+    margin-top: 2rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.locator-content-container .locator-content-header{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.highlight {
+    color: gold;
+    font-weight: bold;
+}
+
+.locator-container-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap:1rem;
+}
+
+.locator-container-search-bar input {
+    padding: 0.8rem;
+    width: 300px;
+    border: 2px solid gold;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.find-button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: gold;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.find-button:hover {
+    background: darkgoldenrod;
+}
+
+.character {
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 120px;
+    height: auto;
+}
+
+@media (min-height: 880px){
+    .locator-container{
+        gap:5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .locator-header-container h1 {
+        font-size: 5rem;
+    }
+    .locator-content-container .locator-content-header {
+        font-size: 3rem;
+    }
+    .locator-container-search-bar input {
+        width: 75%;
+    }
+    .character {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .locator-header-container {
+        align-items: center;
+        padding: 1rem;
+    }
+    .locator-header-container h1 {
+        font-size: 5rem;
+    }
+    .locator-content-container .locator-content-header {
+        font-size: 2rem;
+    }
+    .character {
+        width: 150px;
+    }
+}
+
+@media (max-width: 550px) {
+    .locator-header-container h1 {
+        font-size:3.5rem;
+    }
+    .character {
+        width: 80px;
+    }
+}
+@media (max-width: 400px){
+    .locator-header-container h1 {
+        font-size:2.5rem;
+        padding: 3rem 0;
+    }
+    .locator-content-container .locator-content-header{
+        font-size: 1.5rem;
+    }
+    .locator-content-para{
+        font-size: 1rem;
+    }
+    .character {
+        width: 80px;
+    }
+    .locator-container-search-bar input {
+        width: 50%;
+        height:1rem;
+        padding:1rem;
+        font-size: 1rem;
+    }
+    .locator-container-search-bar input::placeholder{
+        font-size:0.8rem;
+    }
+    .search-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .find-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}

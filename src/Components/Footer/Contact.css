@@ -1,0 +1,154 @@
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 2rem 3rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+    color: gold;
+}
+
+.footer-section p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.request-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.request-heading {
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.email-input {
+    display: flex;
+    background: yellow;
+    padding: 8px;
+    border-radius: 30px;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.email-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+}
+
+.email-input button {
+    background: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.social-icons svg {
+    background: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    color: white;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-icons svg:hover {
+    background-color: gold;
+    color: black;
+}
+
+.app-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.app-links img {
+    width: 140px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        align-items: center;
+    }
+    .footer-section p{
+        justify-content: center;        
+    }
+    .email-input {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .app-links {
+        justify-content: center;
+    }
+}

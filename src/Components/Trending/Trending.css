@@ -1,0 +1,162 @@
+.trending-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 50px 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1; 
+}
+
+.outer-container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.outer-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px; 
+    padding: 20px 0;
+    position: relative;
+    z-index: 2; 
+}
+
+.trending-header {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.btn-find {
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.card {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid gold;
+    width: 300px;
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 100px;
+    height: auto;
+}
+
+.card-name {
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.star img {
+    width: 20px;
+}
+
+.cartoon-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.cartoon img {
+    width: 100px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.cartoon:first-child img {
+    left: 0;
+    bottom: -20px;
+}
+
+.cartoon:last-child img {
+    right: 0;
+    bottom: -20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .trending-header {
+        font-size: 2.5rem;
+    }
+    .btn-find {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trending-header {
+        font-size: 2rem;
+    }
+    .card {
+        width: 220px;
+    }
+    .cartoon img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 550px) {
+    .outer-header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-find {
+        width: 100%;
+    }
+    .cartoon img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 330px) {
+    .trending-header {
+        font-size: 1.8rem;
+    }
+    .card {
+        width: 200px;
+        padding: 15px;
+    }
+    .cartoon img {
+        width: 60px;
+    }
+}
