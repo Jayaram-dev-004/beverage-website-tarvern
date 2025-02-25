@@ -28,6 +28,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<AgePage />} />
+            <Route path="/beverage-website-tarvern" element = {<AgePage/>} />
             <Route path="/Home01" element={<Home01 />} />
             <Route path="/Home02" element={<Home02 />} />
             <Route path="/Home03" element={<Home03 />} />
