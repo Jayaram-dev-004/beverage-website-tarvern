@@ -25,7 +25,7 @@ function App() {
   return (
     <AdminProvider>
       <ProductProvider>
-        <Router>
+        <Router basename="/beverage-website-tarvern">
           <Routes>
             <Route path="/" element={<AgePage />} />
             <Route path="/beverage-website-tarvern" element = {<AgePage/>} />
