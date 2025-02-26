@@ -52,10 +52,6 @@ function AvailableProducts() {
 
   return (
     <>
-    <nav className="admin-container-header">
-      <Link to="/admin/available-products">Available Products</Link>
-      <Link to="/admin/customer-history">Customer History</Link>
-    </nav>
     <div className="available-products-container">
       <Sidebar />
       <div className="available-products-content">

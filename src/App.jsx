@@ -25,7 +25,7 @@ function App() {
   return (
     <AdminProvider>
       <ProductProvider>
-        <Router basename="/beverage-website-tarvern">
+        <Router>
           <Routes>
             <Route path="/" element={<AgePage />} />
             <Route path="/beverage-website-tarvern" element = {<AgePage/>} />
@@ -45,9 +45,9 @@ function App() {
             <Route path="/admin" element={<Login />} />
             <Route path="/admin/signup" element={<SignIn />} />
             <Route path="/admin/login" element={<Login />} />
-            <Route path="/admin/adminpage" element={<AdminPage />} />
-            <Route path="/admin/available-products" element={<AvailableProducts />} />
-            <Route path="/admin/customer-history" element={<CustomerHistory />} />
+            <Route path="/admin/adminpage/" element={<AdminPage />} />
+            <Route path="/admin/adminpage/available-products" element={<AvailableProducts />} />
+            <Route path="/admin/adminpage/customer-history" element={<CustomerHistory />} />
             <Route path="/admin/sidebar" element={<Sidebar />} />
 
             <Route path="*" element={<NotFound />} />

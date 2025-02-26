@@ -30,7 +30,7 @@
 .available-products-content h2 {
   text-align: center;
   color: #333;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .search-add-container {
@@ -128,6 +128,9 @@
   .available-products-container {
     flex-direction: column;
   }
+  .avaiable-product-header h2{
+      font-size:1.5rem;
+  }
 
   .search-bar,
   .input-field {
@@ -142,7 +145,7 @@
   }
 
   .avaiable-product-header h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .product-card {

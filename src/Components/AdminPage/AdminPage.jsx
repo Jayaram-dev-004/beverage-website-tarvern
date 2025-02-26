@@ -14,8 +14,8 @@ function AdminPage() {
       <ProductProvider>
         <div className="admin-container">
           <nav className="admin-container-header">
-            <Link to="/admin/available-products">Available Products</Link>
-            <Link to="/admin/customer-history">Customer History</Link>
+            <Link to="/admin/adminpage">Available Products</Link>
+            <Link to="/admin/adminpage/customer-history">Customer History</Link>
           </nav>
 
           <div className="main-content">

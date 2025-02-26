@@ -17,8 +17,8 @@ function CustomerHistory() {
   return (
     <>
     <nav className="admin-container-header">
-        <Link to="/admin/available-products">Available Products</Link>
-        <Link to="/admin/customer-history">Customer History</Link>
+        <Link to="/admin/adminpage">Available Products</Link>
+        <Link to="/admin/adminpage/customer-history">Customer History</Link>
     </nav>
     <div className="customer-history-container">
       <h2>Customer History</h2>
